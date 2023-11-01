@@ -6,10 +6,8 @@
     <title>Photography Company</title>
     <style>
         body {
-            
             margin: 0;
             padding: 0;
-            /* Changed overflow property to visible */
             overflow: visible;
         }
 
@@ -73,7 +71,7 @@
 
         .wrap {
             padding: 10px 20px 0px 20px;
-            color:white;
+            color: white;
         }
 
         @keyframes slideIn {
@@ -83,6 +81,16 @@
 
             100% {
                 left: 0;
+            }
+        }
+
+        /* Media query for small screens */
+        @media (max-width: 768px) {
+            .image-text h1 {
+                font-size: 40px; /* Adjust the font size for smaller screens */
+            }
+            .title {
+                font-size: 60px; /* Adjust other titles for smaller screens if needed */
             }
         }
     </style>
@@ -95,7 +103,6 @@
         <div class="image-text">
             <div class="wrap">
                 <h1 class="title">Capturing Life's Beauty..</h1>
-           
             </div>
         </div>
     </div>
@@ -103,13 +110,8 @@
     <div class="second-page">
         <div class="wrap">
             <p class="title">Creating Memories</p>
-            <!-- <p class="title">  Memories ...</p>
-            <h1 >..One Pixel at a Time.</h1> -->
-           
         </div>
     </div>
- 
-    
 </body>
 
 </html>
