@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Photography Company</title>
+    <style>
+        body {
+            
+            margin: 0;
+            padding: 0;
+            /* Changed overflow property to visible */
+            overflow: visible;
+        }
+
+        .image-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), transparent);
+        }
+
+        .image-text {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            animation: slideIn 1s ease-out forwards;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .title {
+            font-size: 100px;
+            font-family: 'Lato';
+        }
+
+        .second-page {
+            height: 100vh;
+            background: url(images/IMG_0539.jpg) no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+        }
+
+        .white-box {
+            width: 100px;
+            height: 100px;
+            background: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .wrap {
+            padding: 10px 20px 0px 20px;
+            color:white;
+        }
+
+        @keyframes slideIn {
+            0% {
+                left: -100%;
+            }
+
+            100% {
+                left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-container">
+        <div class="image-overlay"></div>
+        <img class="image" src="images/IMG_8664.jpg">
+        <div class="image-text">
+            <div class="wrap">
+                <h1 class="title">Capturing Life's Beauty..</h1>
+           
+            </div>
+        </div>
+    </div>
+
+    <div class="second-page">
+        <div class="wrap">
+            <p class="title">Creating Memories</p>
+            <!-- <p class="title">  Memories ...</p>
+            <h1 >..One Pixel at a Time.</h1> -->
+           
+        </div>
+    </div>
+ 
+    
+</body>
+
+</html>
